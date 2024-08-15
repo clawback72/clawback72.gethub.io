@@ -21,9 +21,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Projects</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li class="active"><a href="resume.html">Resume</a></li>
-                            <li><a href="test.html">Test</a></li>
+                            <li><a href="projects.html">Projects</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="www.linkedin.com/in/brian-mcconahey-68469632" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -34,11 +34,16 @@
 
 				<!-- Main -->
 					<div id="main">
+						<ul class="center-button">
+							<li><a href="images/resume.pdf" class="button" download="brian_mcconahey_resume.pdf">download pdf</a></li>
+						</ul>
+						
+
 					</style><style type="text/css" id="static">
 						html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
 						body{background:#FFF;line-height:1;text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
 						#document table{border-collapse:collapse;border-spacing:0;font-size:inherit;color:inherit;width:100%}
-				
+
 						/* START content disc style for LI */
 						#document ul,#document li{list-style:none;margin:0;padding:0}
 						#document ul li{position:relative;margin:0;padding-left:10pt}
@@ -141,45 +146,7 @@
 						#document .wrap-wrd{word-wrap:break-word}
 						#document .education .singlecolumn{display:table;table-layout:fixed;width:100%}
 						#document .date-box{display:table-cell;width:145pt;vertical-align:top;color:#9E9F9D}
-						#document .content-box{display:table-cell;vertical-align:top}
-
-						@media print {
-						#document.pagesize{width:100%}
-						}
-					</style><style type="text/css" id="unparsed">
-						#document.vmargins{padding-top:{$TBMR}pt;padding-bottom:{$TBMR}pt}
-						#document.hmargins{padding-left:{$LRMR}pt;padding-right:{$LRMR}pt}
-						#document.fontsize{font-size:{$FTSZ}pt;line-height:{$FTLH}pt}
-						#document .lang-sec .paragraph *,#document .skli-sec .paragraph *{font-size:{$FTSZ}pt}
-						#document.fontface{font-family:{$FTFC}}
-						#document.pagesize{width:{$PGSZ}pt}
-						#document .heading{font-size:{$HDSZ}pt;line-height:{$HDLH}pt}
-						#document .name{font-size:{$NMSZ}pt;line-height:{$NMLH}pt}
-						#document ul li:before,#document .skill .singlecolumn.maincolumn .field:before,#document .skill .maincolumn .field:before{font-size:{$BULL}pt!important}
-						#document .sectiontitle{color:{$HDCL}}
-						/* Color ribbon styles */
-						#document .lang-sec.infobarsec .inner-rating,#document .skli-sec.infobarsec .inner-rating,#document .graphic{background-color:{$HDCL}}
-						/* Color ribbon Styles ENDS HERE */
-
-						/*Infographic*/        
-						#document .lang-sec.infobarsec .singlecolumn,#document .skli-sec.infobarsec .singlecolumn{font-size:{$FTIG}pt;line-height:{$LHIG}pt}
-						#document .singlecolumn.infobarpara .field.field-ratt{font-size:{$FTIG}pt;line-height:{$LHRT}pt}
-						
-						/* PDF specific code */
-						.skn-mcl4.for-pdf .lang-sec.infobarsec .inner-rating,.skn-mcl4.for-pdf .skli-sec.infobarsec .inner-rating{z-index:-1} 
-				
-						@media only screen and (min-width:768px) and (max-width:991px){
-						#document.hmargins{padding-left:{$LRMRT}pt;padding-right:{$LRMRT}pt}
-						}
-				
-						/*  used LRMRM for mobile  */
-						@media only screen and (max-width:767px){
-						#document.hmargins{padding-left:{$LRMRM}pt;padding-right:{$LRMRM}pt}
-						}
-						@supports (-webkit-touch-callout: none) {
-							#document .bottom-box{padding-top:10pt}
-							#document .header-wrap{min-height:auto}
-						}
+						#document .content-box{display:table-cell;vertical-align:top
 
 						/*Added nbsp in CATEGORY_SOCIAL_SOCL to avoid word break issue in PDF*/
 					</style><style type="text/css" id="dynamic">
@@ -200,25 +167,19 @@
 						/*Infographic*/        
 						#document .lang-sec.infobarsec .singlecolumn,#document .skli-sec.infobarsec .singlecolumn{font-size:9pt;line-height:12pt}
 						#document .
-
-						/* PDF specific code */
-						.skn-mcl4.for-pdf .lang-sec.infobarsec .inner-rating,.skn-mcl4.for-pdf .skli-sec.infobarsec .inner-rating{z-index:-1} 
-				
-						@media only screen and (min-width:768px) and (max-width:991px){
-						#document.hmargins{padding-left:6.0pt;padding-right:6.0pt}
-						}
 				
 						/*  used LRMRM for mobile  */
-						@media only screen and (max-width:767px){
-						#document.hmargins{padding-left:6.0pt;padding-right:6.0pt}
+						@media only screen and (max-width: 736px) {
+							#document.hmargins{padding-left:6px;padding-right:6px}
 						}
+							
 						@supports (-webkit-touch-callout: none) {
-							#document .bottom-box{padding-top:10pt}
+							#document .bottom-box{padding-top:10px}
 							#document .header-wrap{min-height:auto}
 						}
 
 						/* Media query for smaller screens */
-						@media (max-width: 768px) { /* You can adjust the max-width value based on your needs */
+						@media (max-width: 736px) { /* You can adjust the max-width value based on your needs */
 							#document .skill .paragraph {
 								width: 100%;
 								float: none; /* Removes the float */

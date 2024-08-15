@@ -2820,8 +2820,8 @@ input, select, textarea {
 				width: 2.25rem;
 				height: 2.25rem;
 				line-height: 2.25rem;
-				display: inline-block;
-				text-align: center;
+				display: inline-flex;
+				justify-content: center;
 				border-radius: 100%;
 				font-size: 1.25rem;
 			}
@@ -4686,4 +4686,11 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+.center-button {
+		text-align: center; /* Center the content */
+		list-style-type: none; /* Remove bullet points */
+		padding: 0; /* Remove default padding */
+		margin: 0; /* Remove default margin */
 	}
