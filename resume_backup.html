@@ -59,10 +59,9 @@
 						#document .cmn-font{display:block}
 						#document .paddedline,#document .jobtitle{display:block;color:rgba(118,119,116,0.73);font-weight:600}
 						#document .paddedline{margin-bottom:3px}
-
+				
 						/*Document*/
 						#document{color:#000;position:relative;-webkit-print-color-adjust:exact;word-break:break-word}
-						
 						/*FIX for FORCEFULLY making left margin ZERO for CL*/
 						#document .skill .paragraph{width:33%;float:left;padding-left:10pt;padding-bottom:5pt;box-sizing:border-box;padding-top:0}
 						#document .skill .paragraph:nth-child(3n+5){clear:both}
@@ -76,7 +75,7 @@
 						#document .singlecolumn li{margin-bottom:5pt}
 						#document .singlecolumn li:last-child{margin-bottom:0}
 						div#document .skill .singlecolumn .field:before,div#document .skill .maincolumn .field:before{content:'\2022';position:absolute;left:0;font-family:auto;font-size:7pt;font-weight:400}
-
+				
 						/*FIX for Re-calculating width of singlecolumn for CL*/
 						#document .graphic{color:#fff;text-align:center;width:46pt;font-size:17pt;line-height:20pt;height:46pt;font-weight:700;position:absolute;text-transform:uppercase;padding-top:13pt;box-sizing:border-box;top:0;left:0}
 						#document .city-name{display:inline-block;white-space:nowrap}
@@ -86,14 +85,14 @@
 						#document .section .txt-bold{font-weight:bold}
 						#document .section .flt-right{float:right;display:none!important}
 						#document .lang-sec.infobarsec .field .colon, #document .skli-sec.infobarsec .field .colon{display:none}
-
+				
 						/* #document .section.photo-cv{position:absolute;width:67pt; height:67pt;margin-top:0;padding:0} */
 						#document .topsection{position:relative}
 						#document .section.photo-cv{width:46pt;height:46pt;top:0;left:0;position:absolute;margin:0;z-index:1}
 						#document .section.photo-cv .paragraph{padding:0;line-height:normal;font-size:0}
 						#document .section.photo-cv span{display:block}
 						#document .section.photo-cv img{max-width:100%;width:46pt;height:46pt}
-
+				
 						body{font-feature-settings:"liga" 0; -moz-font-feature-settings:"liga" off}
 						#document .clearDiv{clear:both}
 						/*css to break long email*/
@@ -121,7 +120,7 @@
 						#document .inner-lang + .field{clear:both}
 						#document .hide-bar .field-ratt,#document .hide-only-bar .field-ratt{width:100%!important}
 						#document .hide-only-bar .rating-bar{display:none}
-
+				
 						/*Infographic Tiles*/
 						#document .lang-sec.infotilesec .paragraph,#document .skli-sec .paragraph{display:inline-block;vertical-align:top;padding-bottom:11pt;margin-top:0}
 						#document .lang-sec.infotilesec > .paragraph:nth-last-child(1),#document .lang-sec.infotilesec > .paragraph:nth-last-child(2),#document .lang-sec.infotilesec > .paragraph:nth-last-child(3),#document .skli-sec > .paragraph:nth-last-child(1),#document .skli-sec > .paragraph:nth-last-child(2),#document .skli-sec > .paragraph:nth-last-child(3){padding-bottom:0!important}
@@ -142,7 +141,7 @@
 						#document .education .singlecolumn{display:table;table-layout:fixed;width:100%}
 						#document .date-box{display:table-cell;width:145pt;vertical-align:top;color:#9E9F9D}
 						#document .content-box{display:table-cell;vertical-align:top}
-
+				
 						@media print {
 						#document.pagesize{width:100%}
 						}
@@ -160,7 +159,7 @@
 						/* Color ribbon styles */
 						#document .lang-sec.infobarsec .inner-rating,#document .skli-sec.infobarsec .inner-rating,#document .graphic{background-color:{$HDCL}}
 						/* Color ribbon Styles ENDS HERE */
-
+				
 						/*Infographic*/        
 						#document .lang-sec.infobarsec .singlecolumn,#document .skli-sec.infobarsec .singlecolumn{font-size:{$FTIG}pt;line-height:{$LHIG}pt}
 						#document .singlecolumn.infobarpara .field.field-ratt{font-size:{$FTIG}pt;line-height:{$LHRT}pt}
@@ -180,7 +179,7 @@
 							#document .bottom-box{padding-top:10pt}
 							#document .header-wrap{min-height:auto}
 						}
-
+				
 						/*Added nbsp in CATEGORY_SOCIAL_SOCL to avoid word break issue in PDF*/
 					</style><style type="text/css" id="dynamic">
 						#document.vmargins{padding-top:24pt;padding-bottom:24pt}
@@ -199,8 +198,8 @@
 				
 						/*Infographic*/        
 						#document .lang-sec.infobarsec .singlecolumn,#document .skli-sec.infobarsec .singlecolumn{font-size:9pt;line-height:12pt}
-						#document .
-
+						#document .singlecolumn.infobarpara .field.field-ratt{font-size:9pt;line-height:12pt}
+						
 						/* PDF specific code */
 						.skn-mcl4.for-pdf .lang-sec.infobarsec .inner-rating,.skn-mcl4.for-pdf .skli-sec.infobarsec .inner-rating{z-index:-1} 
 				
@@ -216,31 +215,7 @@
 							#document .bottom-box{padding-top:10pt}
 							#document .header-wrap{min-height:auto}
 						}
-
-						/* Media query for smaller screens */
-						@media (max-width: 768px) { /* You can adjust the max-width value based on your needs */
-							#document .skill .paragraph {
-								width: 100%;
-								float: none; /* Removes the float */
-								padding-left: 20px; /* Removes the left padding */
-								padding-bottom: 8px; /* Adjust padding as needed */
-							}
-
-							#document .heading {
-								width: 100%; /* Makes the heading full-width */
-								display: block; /* Changes the display to block */
-								padding-left: 0; /* Removes any padding */
-								margin-left: 0; /* Removes any margin */
-							}
-
-							/* Additional adjustments if needed */
-							#document .sectiontitle {
-								padding-right: 0; /* Removes the right padding */
-							}
-						}
-
-						
-
+				
 						/*Added nbsp in CATEGORY_SOCIAL_SOCL to avoid word break issue in PDF*/
 					</style><script></script>
 									</head>
